@@ -81,14 +81,15 @@ The Central Library wants to manage book lending and cultural events.
 
 ### Relationships and Constraints
 
-| Relationship                 | Cardinality | Participation                                 | Notes                                                               
+| Relationship                 | Cardinality | Participation                                 | Notes                                                                   |
+| ---------------------------- | ----------- | --------------------------------------------- | ----------------------------------------------------------------------- |
+| **Book–Loan**                | 1 : N       | Total on Loan, Partial on Book                | One book can be loaned many times                                       |
+| **Member–Loan**              | 1 : N       | Total on Loan, Partial on Member              | One member can borrow many books                                        |
+| **Member–EventRegistration** | 1 : N       | Total on EventRegistration, Partial on Member | A member can register for many events                                   |
+| **Event–EventRegistration**  | 1 : N       | Total on EventRegistration, Partial on Event  | Each event can have many registrations                                  |
+| **Event–Speaker**            | M : N       | Partial                                       | An event can have multiple speakers, a speaker can speak at many events |
+| **Event–Room**               | N : 1       | Total on Event, Partial on Room               | Each event is held in exactly one room                                  |
 
-| Book–Loan                    | 1 : N       | Total on Loan, Partial on Book                | One book can be loaned many times     |
-| Member–Loan                  | 1 : N       | Total on Loan, Partial on Member              | One member can borrow many books      |
-| Member–EventRegistration     | 1 : N       | Total on EventRegistration, Partial on Member | A member can register for many events |
-| Event–EventRegistration      | 1 : N       | Total on EventRegistration, Partial on Event  | Each event can have many registrations|                             
-| Event–Speaker                | M : N       | Partial                                       | An event can have multiple speakers   |
-| Event–Room                   | N : 1       | Total on Event, Partial on Room               | Each event is held in exactly one room |                                 
 
 ### Assumptions
 - One loan = one book + one member.
