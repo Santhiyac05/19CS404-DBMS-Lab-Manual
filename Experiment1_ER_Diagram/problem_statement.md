@@ -65,31 +65,38 @@ The Central Library wants to manage book lending and cultural events.
 
 ### ER Diagram:
 *Paste or attach your diagram here*  
-![ER Diagram](er_diagram_library.png)
+![ER Diagram]<img width="695" height="833" alt="image" src="https://github.com/user-attachments/assets/ec64c3dc-aa12-498b-957b-4bcfe7aa3a8c" />
+
 
 ### Entities and Attributes
 
-| Entity | Attributes (PK, FK) | Notes |
-|--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
+| Entity                | Attributes (PK, FK)                                                                   | Notes                                 |
+| --------------------- | ------------------------------------------------------------------------------------- | ------------------------------------- |
+| Book                  | BookID (PK), Title, Author, Category                                                  | Each book has a unique BookID         |
+| Loan                  | LoanID (PK), LoanDate, ReturnDate, FineAmount, BookID (FK), MemberID (FK)             | Loan is linked to a Book and a Member |
+| Member                | MemberID (PK), Name, Contact                                                          | Each library member has a unique ID   |
+| EventRegistration     | RegistrationID (PK), EventID (FK), MemberID (FK)                                      | Connects members to events            |
+| Event                 | EventID (PK), EventName, EventDate, RoomID (FK)                                       | Each event occurs in a room           |
+| Speaker               | SpeakerID (PK), Name, Topic                                                           | Speakers present at events            |
 
 ### Relationships and Constraints
 
-| Relationship | Cardinality | Participation | Notes |
-|--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
+| Relationship                 | Cardinality | Participation                                 | Notes                                                               
+
+| Book–Loan                    | 1 : N       | Total on Loan, Partial on Book                | One book can be loaned many times     |
+| Member–Loan                  | 1 : N       | Total on Loan, Partial on Member              | One member can borrow many books      |
+| Member–EventRegistration     | 1 : N       | Total on EventRegistration, Partial on Member | A member can register for many events |
+| Event–EventRegistration      | 1 : N       | Total on EventRegistration, Partial on Event  | Each event can have many registrations|                             
+| Event–Speaker                | M : N       | Partial                                       | An event can have multiple speakers   |
+| Event–Room                   | N : 1       | Total on Event, Partial on Room               | Each event is held in exactly one room |                                 
 
 ### Assumptions
-- 
-- 
-- 
+- One loan = one book + one member.
 
+- One event = one room.
+
+- Events ↔ Speakers are many-to-many.
+ 
 ---
 
 # Scenario C: Restaurant Table Reservation & Ordering
