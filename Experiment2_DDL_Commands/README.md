@@ -277,6 +277,9 @@ ON DELETE SET NULL
 
 <img width="1225" height="420" alt="image" src="https://github.com/user-attachments/assets/8baa42c0-9f76-4f89-aa70-3f12d43cf6f1" />
 
+GRADE 
+<img width="1353" height="88" alt="image" src="https://github.com/user-attachments/assets/855ccbee-6862-4615-8ed6-4e7944b0c0ca" />
+
 
 
 ## RESULT
