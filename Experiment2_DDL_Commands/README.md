@@ -105,27 +105,38 @@ CREATE TABLE Table_Name (
 
 **Question 1**
 --
--- Paste Question 1 here
+--<img width="947" height="459" alt="image" src="https://github.com/user-attachments/assets/ec6cc6ba-9c7e-44ea-9e5d-20b67fbc005c" />
+
 
 ```sql
--- Paste your SQL code below for Question 1
+-- CREATE TABLE Products
+(
+ProductID INTEGER,
+ProductName TEXT,
+Price REAL,
+Stock INTEGER
+);
 ```
 
 **Output:**
 
-![Output1](output.png)
+!<img width="1212" height="391" alt="image" src="https://github.com/user-attachments/assets/fd800470-ad21-4eb5-8fa6-4b7800d1b9e1" />
+
 
 **Question 2**
 ---
--- Paste Question 2 here
+-- <img width="702" height="356" alt="image" src="https://github.com/user-attachments/assets/100ea827-22b6-41cd-8b0f-68d6ee556e4e" />
+
 
 ```sql
--- Paste your SQL code below for Question 2
+-- INSERT INTO Employee(EmployeeID, Name, Department, Salary)
+SELECT  EmployeeID, Name, Department, Salary FROM Former_employees;
 ```
 
 **Output:**
 
-![Output2](output.png)
+!<img width="1212" height="333" alt="image" src="https://github.com/user-attachments/assets/e6a90abc-3a7a-431e-bb54-2201d6b5c683" />
+
 
 **Question 3**
 ---
