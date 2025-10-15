@@ -189,10 +189,12 @@ HAVING MAX(workhour) > 12;
 
 **Output:**
 
+<img width="780" height="470" alt="image" src="https://github.com/user-attachments/assets/818690c3-72d1-499e-9a37-1f488827f8f0" />
 
 
 **Question 10**
 ---
+<img width="870" height="531" alt="image" src="https://github.com/user-attachments/assets/8dd49165-78a2-4edb-8855-b5de0808ef10" />
 
 
 ```sql
