@@ -211,7 +211,9 @@ HAVING AVG(workhour) BETWEEN 10 AND 12;
 <img width="797" height="460" alt="image" src="https://github.com/user-attachments/assets/bbd092d0-1401-4cdd-95c4-536492fd2427" />
 
 GRADES:
+
 <img width="810" height="162" alt="image" src="https://github.com/user-attachments/assets/0126bf59-b53e-4267-969f-d440578edfb3" />
+
 <img width="777" height="156" alt="image" src="https://github.com/user-attachments/assets/c5569742-8919-4a19-b9d0-18279650aeb8" />
 
 
