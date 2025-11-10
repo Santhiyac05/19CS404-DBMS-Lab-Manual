@@ -168,7 +168,8 @@ WHERE purch_amt > (
 
 **Question 8**
 ---
-<img width="1193" height="708" alt="image" src="https://github.com/user-attachments/assets/083e5847-ae48-4498-8f56-270a291de635" />
+<img width="882" height="737" alt="image" src="https://github.com/user-attachments/assets/e29bf50e-2628-41be-b113-512b9a3efe35" />
+
 ```sql
 SELECT s.salesman_id, s.name
 FROM salesman s
@@ -180,8 +181,9 @@ HAVING COUNT(c.customer_id) > 1;
 ```
 
 **Output:**
+<img width="747" height="461" alt="image" src="https://github.com/user-attachments/assets/ec3d092d-88a2-44a5-b7a1-7f75d7d18431" />
 
-<img width="670" height="457" alt="image" src="https://github.com/user-attachments/assets/69307fb6-8988-4408-8b52-e329c9dc6cb7" />
+
 
 
 **Question 9**
