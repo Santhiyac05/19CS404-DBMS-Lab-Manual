@@ -75,7 +75,9 @@ where s.city='New York'
 **Question 3**
 ---
 <img width="904" height="757" alt="image" src="https://github.com/user-attachments/assets/6fbf1375-92b8-48b3-8225-53fb5698cecb" />
-```sql
+
+```
+sql
 SELECT *FROM CUSTOMERS
 WHERE salary > 1500;
 ```
@@ -184,7 +186,8 @@ HAVING COUNT(c.customer_id) > 1;
 
 **Question 9**
 ---
-<img width="881" height="667" alt="image" src="https://github.com/user-attachments/assets/d1a1586a-1515-47ac-8dbf-74ec83100724" />
+<img width="866" height="642" alt="image" src="https://github.com/user-attachments/assets/d41e968c-2439-49fc-be96-8a53733a12a7" />
+
 
 ```sql
 SELECT g.*
@@ -198,9 +201,7 @@ WHERE grade = (
 ```
 
 **Output:**
-<img width="904" height="433" alt="image" src="https://github.com/user-attachments/assets/c2fb78b5-1aa2-4eb7-9b67-2812422e8929" />
-
-
+<img width="878" height="459" alt="image" src="https://github.com/user-attachments/assets/de5a3a6c-44e4-4fa5-bf2e-4fb51b6e280f" />
 
 **Question 10**
 ---
