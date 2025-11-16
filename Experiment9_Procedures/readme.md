@@ -94,7 +94,8 @@ Output:
 - Use a loop to calculate the factorial.
 - Return the result using the `RETURN` statement.
 - Call the function using a `SELECT` statement or in an anonymous block.
-  Program
+  
+  Program:
   ```
   SET SERVEROUTPUT ON;
 CREATE OR REPLACE FUNCTION get_factorial(p_number IN NUMBER)
@@ -121,8 +122,7 @@ BEGIN
    v_output := get_factorial(v_input);
    DBMS_OUTPUT.PUT_LINE('Factorial of ' || v_input || ' is ' || v_output);
 END;
-/
-```
+/```
 
 **Expected Output:**  
 Factorial of 5 is 120
@@ -158,8 +158,7 @@ END;
 BEGIN
    check_even_odd(12);  
 END;
-/
-``
+/```
 
 **Expected Output:**  
 12 is Even
@@ -203,8 +202,7 @@ BEGIN
     v_result := reverse_number(v_input);
     DBMS_OUTPUT.PUT_LINE('Reversed number of ' || v_input || ' is ' || v_result);
 END;
-/
-``
+/```
 
 **Expected Output:**  
 Reversed number of 1234 is 4321
@@ -237,8 +235,7 @@ SET SERVEROUTPUT ON;
 BEGIN
     print_table(5);
 END;
-/
-``
+/```
 
 **Expected Output:**  
 Multiplication table of 5:  
