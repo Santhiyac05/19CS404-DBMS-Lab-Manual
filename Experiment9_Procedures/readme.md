@@ -95,9 +95,9 @@ Output:
 - Return the result using the `RETURN` statement.
 - Call the function using a `SELECT` statement or in an anonymous block.
   
-  Program:
-  ```
-  SET SERVEROUTPUT ON;
+Program:
+```
+SET SERVEROUTPUT ON;
 CREATE OR REPLACE FUNCTION get_factorial(p_number IN NUMBER)
 RETURN NUMBER
 IS
@@ -122,7 +122,8 @@ BEGIN
    v_output := get_factorial(v_input);
    DBMS_OUTPUT.PUT_LINE('Factorial of ' || v_input || ' is ' || v_output);
 END;
-/```
+/
+```
 
 **Expected Output:**  
 Factorial of 5 is 120
@@ -139,11 +140,9 @@ Output:
 - Accept an input parameter.
 - Use the `MOD` function to check if the number is divisible by 2.
 - Display whether it is Even or Odd using `DBMS_OUTPUT.PUT_LINE`.
-  Program:
-  ```
-  SET SERVEROUTPUT ON;
-
-
+Program:
+```
+SET SERVEROUTPUT ON;
 CREATE OR REPLACE PROCEDURE check_even_odd(p_number IN NUMBER) IS
 BEGIN
   
@@ -158,7 +157,8 @@ END;
 BEGIN
    check_even_odd(12);  
 END;
-/```
+/
+```
 
 **Expected Output:**  
 12 is Even
@@ -176,9 +176,9 @@ Output:
 - Use a loop to reverse the digits of the number.
 - Return the reversed number.
 - Call the function and display the output.
-  Program:
-  ```
-  CREATE OR REPLACE FUNCTION reverse_number(p_number IN NUMBER)
+Program:
+```
+CREATE OR REPLACE FUNCTION reverse_number(p_number IN NUMBER)
 RETURN NUMBER IS
     v_number     NUMBER := p_number;
     v_reversed   NUMBER := 0;
@@ -202,7 +202,9 @@ BEGIN
     v_result := reverse_number(v_input);
     DBMS_OUTPUT.PUT_LINE('Reversed number of ' || v_input || ' is ' || v_result);
 END;
-/```
+/
+```
+ 
 
 **Expected Output:**  
 Reversed number of 1234 is 4321
@@ -219,9 +221,9 @@ Output:
 - Accept an input number.
 - Use a loop from 1 to 10 to multiply the input number.
 - Display the multiplication results using `DBMS_OUTPUT.PUT_LINE`.
-  Program:
-  ```
-  CREATE OR REPLACE PROCEDURE print_table(p_number IN NUMBER) IS
+Program:
+```
+CREATE OR REPLACE PROCEDURE print_table(p_number IN NUMBER) IS
 BEGIN
     DBMS_OUTPUT.PUT_LINE('Multiplication table of ' || p_number || ':');
     FOR i IN 1..10 LOOP
@@ -235,7 +237,8 @@ SET SERVEROUTPUT ON;
 BEGIN
     print_table(5);
 END;
-/```
+/
+```
 
 **Expected Output:**  
 Multiplication table of 5:  
