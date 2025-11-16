@@ -75,9 +75,9 @@ END;
 - Insert some sample data into the table.
 - Use a simple cursor to fetch and display employee names and designations.
 - Implement exception handling to catch the relevant exceptions and display appropriate messages.
-  Program:
-  ```
-  SET SERVEROUTPUT ON;
+Program:
+```
+SET SERVEROUTPUT ON;
 
 DECLARE
     CURSOR emp_cursor IS
@@ -108,10 +108,12 @@ EXCEPTION
     WHEN OTHERS THEN
         DBMS_OUTPUT.PUT_LINE('Unexpected error: ' || SQLERRM);
 END;
-``
+```
 **Output:**  
 The program should display the employee details or an error message.
-<img width="791" height="218" alt="image" src="https://github.com/user-attachments/assets/e6da1ed3-e64a-43cc-a159-e2ce5bf93b18" />
+
+<img width="829" height="219" alt="image" src="https://github.com/user-attachments/assets/0ad39003-7c74-4aad-8ae1-05195090dbd6" />
+
 
 
 ---
@@ -232,9 +234,9 @@ The program should display employee names with their department numbers or the a
 - Insert sample data into the `employees` table.
 - Declare a cursor using `%ROWTYPE` to fetch complete rows from the `employees` table.
 - Implement exception handling to catch the relevant exceptions and display appropriate messages.
-  Program:
-  ```
-  SET SERVEROUTPUT ON;
+ Program:
+```
+SET SERVEROUTPUT ON;
 
 DECLARE
     CURSOR emp_cursor IS
@@ -269,10 +271,9 @@ EXCEPTION
         DBMS_OUTPUT.PUT_LINE('Unexpected error: ' || SQLERRM);
 END;
 ```
-
 **Output:**  
 The program should display employee records or the appropriate error message if no data is found.
-<img width="839" height="360" alt="image" src="https://github.com/user-attachments/assets/6b8b1d7c-eed1-4ca9-9e1f-6854dee98b5b" />
+<img width="827" height="334" alt="image" src="https://github.com/user-attachments/assets/3f253083-350b-43d9-b36f-185988cb1859" />
 
 ---
 
@@ -322,11 +323,10 @@ EXCEPTION
     WHEN OTHERS THEN
         DBMS_OUTPUT.PUT_LINE('An unexpected error occurred: ' || SQLERRM);
 END;
-/
 ```
 **Output:**  
 The program should update employee salaries and display a message, or it should display an error message if no data is found.
-<img width="825" height="234" alt="image" src="https://github.com/user-attachments/assets/1b5171da-0665-4398-9bbb-bb2c6b990720" />
+<img width="818" height="226" alt="image" src="https://github.com/user-attachments/assets/553600d8-9ccc-4b3e-986c-f246aaf692b0" />
 
 ---
 
