@@ -97,8 +97,6 @@ Output:
   Program
   ```
   SET SERVEROUTPUT ON;
-
-
 CREATE OR REPLACE FUNCTION get_factorial(p_number IN NUMBER)
 RETURN NUMBER
 IS
@@ -124,7 +122,7 @@ BEGIN
    DBMS_OUTPUT.PUT_LINE('Factorial of ' || v_input || ' is ' || v_output);
 END;
 /
-
+```
 
 **Expected Output:**  
 Factorial of 5 is 120
